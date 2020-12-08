@@ -176,7 +176,7 @@ namespace OfficeEcclesial.App.ViewModels.Dialogs
                     Id = EditionId,
                     Name = ProjectName,
                     Representant = Representant as Person,
-                    Beneficiaries = BeneficiariesCollection.Cast<Person>()
+                    Beneficiaries = BeneficiariesCollection.Cast<Person>().ToList()
                 };
                 if (IsEdition)
                 {

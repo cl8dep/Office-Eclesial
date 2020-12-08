@@ -12,7 +12,7 @@ namespace OfficeEcclesial.Database.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public Person Representant { get; set; }
-        public IEnumerable<Person> Beneficiaries { get; set; }
+        public ICollection<Person> Beneficiaries { get; set; }
 
         private bool _isSelected;
         [NotMapped]

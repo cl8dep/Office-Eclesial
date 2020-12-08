@@ -74,7 +74,7 @@ namespace OfficeEcclesial.App.ViewModels.Dialogs
             }
         }
         [Required(ErrorMessage = "Usted debe proveer un valor para este campo.")]
-        [RegularExpression("^[0-9]{1,2}$")]
+        [RegularExpression("^[1-9][0-9]?$")]
         public string Age
         {
             get => _age;

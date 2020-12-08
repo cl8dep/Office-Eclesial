@@ -64,7 +64,7 @@ namespace OfficeEcclesial.App.ViewModels.Dialogs
                 RaisePropertyChanged(nameof(Phone));
             }
         }
-        [RegularExpression("^[0-9]{8}$", ErrorMessage = "El texto no cumple el formato especificado.")]
+        [RegularExpression("^[1-9][0-9]?$", ErrorMessage = "El texto no cumple el formato especificado.")]
         public string Cellular
         {
             get => _cellular;
@@ -74,8 +74,8 @@ namespace OfficeEcclesial.App.ViewModels.Dialogs
                 RaisePropertyChanged(nameof(Cellular));
             }
         }
-        [Required(ErrorMessageResourceName = "Required_Message", ErrorMessageResourceType = typeof(string))]
-        [RegularExpression("^[0-9]{1,2}$", ErrorMessageResourceName = "Age_Invalid_Message", ErrorMessageResourceType = typeof(string))]
+        [Required(ErrorMessage = "Usted debe proveer un valor para este campo.")]
+        [RegularExpression("^[0-9]{1,2}$", ErrorMessage = "El texto no cumple el formato especificado.")]
         public string Age
         {
             get => _age;
@@ -105,8 +105,6 @@ namespace OfficeEcclesial.App.ViewModels.Dialogs
                 RaisePropertyChanged(nameof(Address));
             }
         }
-
-        
         public ObservableCollection<Person> PersonsCollection
         {
             get => _personsCollection;
@@ -178,9 +176,6 @@ namespace OfficeEcclesial.App.ViewModels.Dialogs
             }
         }
         public string Error { get; }
-
-        
-
         #endregion
 
         public void Edit(IPerson person)

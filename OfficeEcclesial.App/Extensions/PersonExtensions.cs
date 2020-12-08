@@ -135,5 +135,6 @@ namespace OfficeEcclesial.App.Extensions
                 Phone = person.Phone
             };
         }
+    
     }
 }

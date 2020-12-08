@@ -163,6 +163,12 @@ namespace OfficeEcclesial.App.Services
                 fileStream.Close();
             }
         }
+
+        internal void GeneratePastoralPenitenciariaBeneficiariesList(ObservableCollection<PastoralPenitenciariaBeneficiaries> elementsCollection, string fileName)
+        {
+            throw new NotImplementedException();
+        }
+
         public void GeneratePastoralPenitenciariaMembersList(IReadOnlyList<PastoralPenitenciariaMembers> elementsCollection, string filePath)
         {
             using (var fileStream = File.Open(filePath, FileMode.Create))
@@ -451,7 +457,7 @@ namespace OfficeEcclesial.App.Services
                 .SetFontSize(8f)
                 .SetFont(PdfFontFactory.CreateFont(StandardFonts.HELVETICA))
                 .Add("Creado con ")
-                .Add(new Text("Office Ecclesial\n").SetFont(PdfFontFactory.CreateFont(StandardFonts.HELVETICA_BOLD)))
+                .Add(new Text("Office Eclesial\n").SetFont(PdfFontFactory.CreateFont(StandardFonts.HELVETICA_BOLD)))
                 .Add("Disponible para descarga")
                 .Add(link);
 

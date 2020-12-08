@@ -115,12 +115,14 @@ namespace OfficeEcclesial.App.ViewModels.SplashScreen
         }
 
         private void Bg_DoWork(object sender, DoWorkEventArgs e)
-        {
+        {            
             if (!AppEnvironment.DatabaseExist())
             {
+                BusyOpDescription = "Creando base de datos...";               
                 AppEnvironment.CreateEmptyDatabase();
+                Thread.Sleep(TimeSpan.FromSeconds(1));
             }
-            Thread.Sleep(TimeSpan.FromSeconds(2));
+            Thread.Sleep(TimeSpan.FromSeconds(1));
             BusyOpDescription = "Inicializando...";
             Thread.Sleep(TimeSpan.FromSeconds(1));
         }

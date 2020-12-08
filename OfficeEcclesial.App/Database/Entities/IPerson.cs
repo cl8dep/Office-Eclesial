@@ -18,5 +18,6 @@ namespace OfficeEcclesial.App.Database.Entities
         string Address { get; set; }
         int Id { get; set; }
         void Assign(IPerson edited);
+       
     }
 }

@@ -1,11 +1,12 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.CompilerServices;
+
 using OfficeEcclesial.App.Annotations;
-using OfficeEcclesial.App.Database.Entities;
 using OfficeEcclesial.App.Database.Enums;
 
-namespace OfficeEcclesial.Database.Entities
+namespace OfficeEcclesial.App.Database.Entities
 {
     public class PastoralPenitenciariaBeneficiaries
     {
@@ -87,11 +88,30 @@ namespace OfficeEcclesial.Database.Entities
             }
         }
         #endregion
+       
+
+        public string NameDelPreso { get; set; }
+        public string LastNameDelPerso { get; set; }
+        public string Carcel { get; set; }
+
+        internal void Assign(PastoralPenitenciariaBeneficiaries beneficiary)
+        {
+            Name = beneficiary.Name;
+            LastName = beneficiary.LastName;
+            Phone = beneficiary.Phone;
+            Cellular = beneficiary.Cellular;
+            Age = beneficiary.Age;
+            Genre = beneficiary.Genre;
+            Address = beneficiary.Address;
+            NameDelPreso = beneficiary.NameDelPreso;
+            LastNameDelPerso = beneficiary.LastNameDelPerso;
+            Carcel = beneficiary.Carcel;
+        }
+
         public override string ToString()
         {
             return $"{Name}";
         }
-
         #region INotifyPropertyChanged implementation
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -101,14 +121,5 @@ namespace OfficeEcclesial.Database.Entities
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
         #endregion
-
-
-
-
-
-
-        public string NameDelPreso { get; set; }
-        public string LastNameDelPerso { get; set; }
-        public string Carcel { get; set; }
     }
 }

@@ -74,9 +74,9 @@
             <md:PackIcon Kind="Calendar" Foreground="{Binding ElementName=AgeTextBox, Path=BorderBrush}"
                      Grid.Column="0" Grid.Row="6" Height="23" Width="23" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
 
-            <TextBox Text="{Binding Age, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" 
-                 md:HintAssist.Hint="Age" md:HintAssist.IsFloating="True"
-                 Grid.Column="2" Grid.Row="6" x:Name="AgeTextBox"/>
+            <TextBox Text="{Binding Age, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}"
+                     md:HintAssist.Hint="Age" md:HintAssist.IsFloating="True"
+                     Grid.Column="2" Grid.Row="6" x:Name="AgeTextBox"/>
 
             <md:PackIcon Kind="HumanMaleFemale" Foreground="{Binding ElementName=GenreTextBox, Path=BorderBrush}" Margin="4 0 4 0"
                      Grid.Column="4" Grid.Row="6" Height="23" Width="23" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>

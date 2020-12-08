@@ -315,6 +315,7 @@
     <Compile Include="Database\Services\LiturgiaMembersService.cs" />
     <Compile Include="Database\Services\LiturgiaLectoresService.cs" />
     <Compile Include="Database\Services\LiturgiaCantoresService.cs" />
+    <Compile Include="Database\Services\PastoralPenitenciariaBeneficiariesService.cs" />
     <Compile Include="Database\Services\PastoralPenitenciariaMembersService.cs" />
     <Compile Include="Database\Services\PersonService.cs" />
     <Compile Include="Entities\DeviceInfo.cs" />
@@ -337,6 +338,7 @@
     <Compile Include="ViewModels\Sections\LiturgiaMembersSectionViewModel.cs" />
     <Compile Include="ViewModels\Sections\LiturgiaLectoresSectionViewModel.cs" />
     <Compile Include="ViewModels\Sections\LiturgiaCantoresSectionViewModel.cs" />
+    <Compile Include="ViewModels\Sections\PastoralPenitenciariaBeneficiariesSectionViewModel.cs" />
     <Compile Include="ViewModels\Sections\PastoralPenitenciariaMembersSectionViewModel.cs" />
     <Compile Include="ViewModels\Sections\CaritasMembersSectionViewModel.cs" />
     <Compile Include="ViewModels\Sections\CaritasProjectsSectionViewModel.cs" />
@@ -391,6 +393,9 @@
     <Compile Include="Views\Sections\LiturgiaCantoresSectionView.xaml.cs">
       <DependentUpon>LiturgiaCantoresSectionView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Sections\PastoralPenitenciariaBeneficiariesSectionView.xaml.cs">
+      <DependentUpon>PastoralPenitenciariaBeneficiariesSectionView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Sections\PastoralPenitenciariaMembersSectionView.xaml.cs">
       <DependentUpon>PastoralPenitenciariaMembersSectionView.xaml</DependentUpon>
     </Compile>
@@ -435,6 +440,9 @@
     </Compile>
     <Compile Include="Views\Toolbars\LiturgiaCantoresToolbar.xaml.cs">
       <DependentUpon>LiturgiaCantoresToolbar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Toolbars\PastoralPenitenciariaBeneficiariesToolbar.xaml.cs">
+      <DependentUpon>PastoralPenitenciariaBeneficiariesToolbar.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Toolbars\PastoralPenitenciariaMembersToolbar.xaml.cs">
       <DependentUpon>PastoralPenitenciariaMembersToolbar.xaml</DependentUpon>
@@ -568,6 +576,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\Sections\PastoralPenitenciariaBeneficiariesSectionView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\Sections\PastoralPenitenciariaMembersSectionView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -625,6 +637,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Toolbars\LiturgiaCantoresToolbar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Toolbars\PastoralPenitenciariaBeneficiariesToolbar.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

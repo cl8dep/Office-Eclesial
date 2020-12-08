@@ -101,11 +101,10 @@ namespace OfficeEcclesial.App.ViewModels
         });
         public DelegateCommand ShowPastoralPenitenciariaBeneficiariesCommand => new DelegateCommand(() =>
         {
-            //TODO: Implementar beneficiarios
-            if (CurrentContent is PastoralPenitenciariaMembersSectionView) return;
+            if (CurrentContent is PastoralPenitenciariaBeneficiariesSectionView) return;
             OpenPrincipalMenu = false;
             CurrentContentTitle = "Pastoral penitenciaria: Beneficiarios";
-            CurrentContent = Application.GetService<PastoralPenitenciariaMembersSectionView>();
+            CurrentContent = Application.GetService<PastoralPenitenciariaBeneficiariesSectionView>();
             CurrentToolBar = CurrentContent.BindToolbar(Application.GetService<PastoralPenitenciariaMembersToolbar>());
         });
         public DelegateCommand ShowLiturgiaCantoresCommand => new DelegateCommand(() =>
