@@ -1,0 +1,171 @@
+﻿<UserControl x:Class="OfficeEcclesial.App.Views.Sections.HomeSectionView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes" 
+             xmlns:local="clr-namespace:OfficeEcclesial.App.Views.Sections"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style x:Key="SectionHeader" TargetType="{x:Type md:ColorZone}">
+            <Setter Property="Background" Value="{DynamicResource MahApps.Brushes.Accent}"/>
+            <Setter Property="md:ShadowAssist.ShadowDepth" Value="Depth1"/>
+            <Setter Property="Mode" Value="PrimaryLight"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Padding" Value="10 5"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+        </Style>
+        <Style TargetType="{x:Type md:Card}">
+            <Setter Property="MinWidth" Value="200"/>
+            <Setter Property="MaxWidth" Value="200"/>
+            <Setter Property="MinHeight" Value="150"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style x:Key="CardTitle" TargetType="{x:Type md:ColorZone}">
+            <Setter Property="Mode" Value="PrimaryLight"/>
+            <Setter Property="Background" Value="{DynamicResource MahApps.Brushes.Accent}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10 5"/>
+        </Style>
+        <Style x:Key="CardDescription" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="TextWrapping" Value="WrapWithOverflow"/>
+        </Style>
+    </UserControl.Resources>
+
+    <ScrollViewer>
+        <StackPanel Orientation="Vertical">
+
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <md:ColorZone Style="{StaticResource SectionHeader}">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock>Cáritas</TextBlock>
+                        <TextBlock FontSize="10" FontStyle="Italic">
+                        Organización que agrupa 165 organizaciones nacionales de asisencia, desarrollo y servicio social.
+                        </TextBlock>
+                    </StackPanel>
+                </md:ColorZone>
+
+                <WrapPanel Orientation="Horizontal" Grid.Row="1">
+                    <md:Card >
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <md:ColorZone Style="{StaticResource CardTitle}" Grid.Row="0">
+                                <StackPanel Orientation="Horizontal">
+                                    <md:PackIcon Kind="People" Height="25" Width="25"/>
+                                    <TextBlock Margin="10 0">Miembros</TextBlock>
+                                </StackPanel>
+                            </md:ColorZone>
+
+                            <TextBlock Style="{StaticResource CardDescription}" Grid.Row="1">
+                            Administre los miembros del grupo Cáritas
+                            </TextBlock>
+
+                        </Grid>
+                    </md:Card>
+                    <md:Card >
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <md:ColorZone Style="{StaticResource CardTitle}" Grid.Row="0">
+                                <StackPanel Orientation="Horizontal">
+                                    <md:PackIcon Kind="Briefcase" Height="25" Width="25"/>
+                                    <TextBlock Margin="10 0">Proyectos</TextBlock>
+                                </StackPanel>
+                            </md:ColorZone>
+
+                            <TextBlock Style="{StaticResource CardDescription}" Grid.Row="1">
+                            Administre los proyectos del grupo Cáritas
+                            </TextBlock>
+
+                        </Grid>
+                    </md:Card>
+                </WrapPanel>
+
+            </Grid>
+
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <md:ColorZone Background="{DynamicResource MahApps.Brushes.Accent}" 
+                          Mode="PrimaryDark" Foreground="White" FontSize="18" Padding="10 5" FontWeight="DemiBold">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock>Pastoral penitenciaria</TextBlock>
+                        <TextBlock FontSize="10" FontStyle="Italic">
+                        Grupo pastoral que abarca el accionar de la iglesia en todo el accionar del mundo penitenciario.
+                        </TextBlock>
+                    </StackPanel>
+                </md:ColorZone>
+
+                <WrapPanel Orientation="Horizontal" Grid.Row="1">
+                    <md:Card >
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <md:ColorZone Style="{StaticResource CardTitle}" Grid.Row="0">
+                                <StackPanel Orientation="Horizontal">
+                                    <md:PackIcon Kind="People" Height="25" Width="25"/>
+                                    <TextBlock Margin="10 0">Miembros</TextBlock>
+                                </StackPanel>
+                            </md:ColorZone>
+
+                            <TextBlock Style="{StaticResource CardDescription}" Grid.Row="1">
+                            Administre los miembros de la Pastoral penitenciaria
+                            </TextBlock>
+
+                        </Grid>
+                    </md:Card>
+                    <md:Card >
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <md:ColorZone Style="{StaticResource CardTitle}" Grid.Row="0">
+                                <StackPanel Orientation="Horizontal">
+                                    <md:PackIcon Kind="People" Height="25" Width="25"/>
+                                    <TextBlock Margin="10 0">Beneficiarios</TextBlock>
+                                </StackPanel>
+                            </md:ColorZone>
+
+                            <TextBlock Style="{StaticResource CardDescription}" Grid.Row="1">
+                            Administre los beneficiarios de la Pastoral penitenciaria
+                            </TextBlock>
+
+                        </Grid>
+                    </md:Card>
+                </WrapPanel>
+
+            </Grid>
+
+
+        </StackPanel>
+    </ScrollViewer>
+
+
+</UserControl>

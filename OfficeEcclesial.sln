@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeEcclesial.App", "OfficeEcclesial.App\OfficeEcclesial.App.csproj", "{4521DDCA-5D12-4210-8EBE-4FE09FE40170}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4521DDCA-5D12-4210-8EBE-4FE09FE40170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4521DDCA-5D12-4210-8EBE-4FE09FE40170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4521DDCA-5D12-4210-8EBE-4FE09FE40170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4521DDCA-5D12-4210-8EBE-4FE09FE40170}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A2E48F6-0F27-4F7C-97A3-81197F850C53}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="OfficeEcclesial.App.Views.Messages.ValidationErrorMessage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OfficeEcclesial.App.Views.Messages"
+      xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+      x:Name="RootControl" MaxWidth="350">
+
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="MessageTextBlock" Margin="0 6 0 0" FontSize="16" Grid.Row="0" TextWrapping="WrapWithOverflow"/>
+        <Button Grid.Row="1" IsDefault="True" Style="{DynamicResource MaterialDesignFlatButton}"
+                HorizontalAlignment="Right" Margin="16 16 16 0"
+                Command="{x:Static md:DialogHost.CloseDialogCommand}">Aceptar</Button>
+    </Grid>
+</UserControl>
